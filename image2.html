@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" >
+<head>
+<title></title>
+<meta charset="utf-8">
+<meta name="viewport" 
+content="width=device-width, initial-scale=1.0">
+<style>
+</style>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+ <style>
+ .main,.left,.right{height:600px;}
+ .img_case{width:100%;background:black;
+ height:350px;
+ }
+ </style>
+</head> 
+<body>
+
+<div class="container main">
+<div class="row">
+<div class="pt-3 left w-25 col-md-2 border border-success">
+
+<a class="my-2 btn btn-primary"
+
+onclick="Img1()">Picture 1
+</a>
+
+<a class="my-2 btn btn-primary"
+
+onclick="Img2()">Picture 2
+</a>
+
+<a class="my-2 btn btn-primary"
+onclick="Img3()">Picture 3
+</a>
+
+<a class="my-2 btn btn-primary"
+onclick="Img4()">Picture 4
+</a>
+
+<a class="my-2 btn btn-primary"
+onclick="Img5()"
+>Picture 5
+</a>
+</div>
+
+
+<div class="right  pt-3 w-50 mx-3 col-md-5 border border-warning">
+<div class="img_case" id="imgx"></div>
+</div>
+
+</div>
+</div>
+<script>
+//alert("welcome !")
+//let x=confirm("Are you sure !")
+//console.log(x)
+
+
+var img=document.getElementById('imgx')
+let item1="<div class='text-center fs-4 text-info'>Kaduna training is live!</div>"
+let item2="<img width=90% src='assets/images/logo1.png'>"
+img.innerHTML=item1+item2
+
+
+
+
+function Img1(){
+var img=document.getElementById('imgx')
+let item1="<div class='text-center fs-4 text-info'>Abuja training :coming soon!</div>"
+let item2="<img width=90% src='assets/images/1.jpg'>"
+img.innerHTML=item1+item2
+}
+
+
+function Img2(){
+var img=document.getElementById('imgx')
+let item1="<div class='text-center fs-4 text-info'>Liberia training :coming soon!</div>"
+let item2="<img width=90% src='assets/images/3.jpg'>"
+img.innerHTML=item1+item2
+}
+
+
+function Img3(){
+var img=document.getElementById('imgx')
+let item1="<div class='text-center fs-4 text-info'>Delta training Live!</div>"
+let item2="<img width=90% src='assets/images/4.jpg'>"
+img.innerHTML=item1+item2
+}
+
+
+function Img4(){
+var img=document.getElementById('imgx')
+let item1="<div class='text-center fs-4 text-info'>Lagos training :coming soon!</div>"
+let item2="<img width=90% src='assets/images/5.jpg'>"
+img.innerHTML=item1+item2
+}
+
+
+function Img5(){
+var img=document.getElementById('imgx')
+let item1="<div class='text-center fs-4 text-info'>Osun training :coming soon!</div>"
+let item2="<img width=90% src='assets/images/6.jpg'>"
+img.innerHTML=item1+item2
+}
+
+//setInterval(Img2,2000)
+//setInterval(Img3,4000)
+function Slider(){
+setTimeout(Img2,2000)
+setTimeout(Img3,4000)
+setTimeout(Img4,6000)
+setTimeout(Img5,8000)
+setTimeout(Img1,10000)
+}
+Slider()
+//setInterval(Slider,30000)
+let a=100
+let b=200
+let c=300
+let z=a+b
+console.log(z)
+
+let z2=c%a
+console.log(z2)
+
+let z3=a+b
+console.log(z3)
+
+console.log(b++)
+console.log(b++)
+console.log(b++)
+
+
+
+
+
+let val1 = (a>b) && (c==b)
+let val2 = (a>b) || (c==b)
+</script>
+
+<script 
+src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+ 
+</body>
+</html>
